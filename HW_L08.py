@@ -112,6 +112,7 @@ def count_word_occurrences(input_file, word):
 word_to_find = "ahoj"
 print(f"pocet slov {word_to_find} je {count_word_occurrences('source2.txt', word_to_find)}")
 
+
 # task 6 - najit a nahradit
 
 print("---------------TASK 6---------------------")
@@ -131,7 +132,8 @@ def find_and_replace(input_file, old_word, new_word, output_file):
 old = "ahoj"
 new = "******"
 find_and_replace('source2.txt', old, new, 'output_find_replace.txt')
-f11 = open('output_find_replace.txt', "r")
+f11 = open("output_find_replace.txt", "r")
 data4 = f11.read()
 f11.close()
 print(data4)
+
