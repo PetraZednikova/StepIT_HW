@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <style>
+    #modal {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      padding: 20px;
+      background: white;
+      border: 3px solid black;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+    <button id="open">Open</button>
+  <div id="overlay"></div>
+  <div id="modal">
+    <p>This is a modal window. "kuk :)".</p>
+    <button id="close">Close</button>
+  </div>
+
+  <script>
+    document.getElementById("open").onclick = () => {
+      document.getElementById("modal").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    };
+    document.getElementById("close").onclick = () => {
+      document.getElementById("modal").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    };
+  </script>
+
+</body>
+</html>

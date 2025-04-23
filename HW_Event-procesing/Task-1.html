@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+    <h3>Enter Your Name (Name can't contain digits):</h3>
+    <input type="text" id="Username">
+
+    <script>
+    const input = document.getElementById("username");
+    input.addEventListener("input", () => {
+      input.value = input.value.replace(/\d/g, "");
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
